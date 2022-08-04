@@ -12,7 +12,7 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '10a8a453-1268-41e8-b4b3-63f37a3f543e'
-  imageRepository: 'nayeemhbuethackathonfrontend'
+  imageRepository: 'frontend'
   containerRegistry: 'aksacrnh.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
