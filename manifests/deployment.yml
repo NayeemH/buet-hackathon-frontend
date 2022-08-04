@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: nayeemhbuethackathonfrontend 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nayeemhbuethackathonfrontend
+  template:
+    metadata:
+      labels:
+        app: nayeemhbuethackathonfrontend 
+    spec:
+      containers:
+        - name: nayeemhbuethackathonfrontend 
+          image: aksacrnh.azurecr.io/nayeemhbuethackathonfrontend
+          ports:
+          - containerPort: 4200
